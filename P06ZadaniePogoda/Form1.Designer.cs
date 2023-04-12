@@ -38,6 +38,10 @@
             this.pbSnow = new System.Windows.Forms.PictureBox();
             this.pbSun = new System.Windows.Forms.PictureBox();
             this.pbObrazek = new System.Windows.Forms.PictureBox();
+            this.rbFarenheit = new System.Windows.Forms.RadioButton();
+            this.rbCelcjusz = new System.Windows.Forms.RadioButton();
+            this.rbKelvin = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSnow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSun)).BeginInit();
@@ -136,11 +140,56 @@
             this.pbObrazek.TabIndex = 8;
             this.pbObrazek.TabStop = false;
             // 
+            // rbFarenheit
+            // 
+            this.rbFarenheit.AutoSize = true;
+            this.rbFarenheit.Location = new System.Drawing.Point(12, 220);
+            this.rbFarenheit.Name = "rbFarenheit";
+            this.rbFarenheit.Size = new System.Drawing.Size(69, 17);
+            this.rbFarenheit.TabIndex = 9;
+            this.rbFarenheit.Text = "Farenheit";
+            this.rbFarenheit.UseVisualStyleBackColor = true;
+            // 
+            // rbCelcjusz
+            // 
+            this.rbCelcjusz.AutoSize = true;
+            this.rbCelcjusz.Checked = true;
+            this.rbCelcjusz.Location = new System.Drawing.Point(12, 197);
+            this.rbCelcjusz.Name = "rbCelcjusz";
+            this.rbCelcjusz.Size = new System.Drawing.Size(64, 17);
+            this.rbCelcjusz.TabIndex = 10;
+            this.rbCelcjusz.TabStop = true;
+            this.rbCelcjusz.Text = "Celcjusz";
+            this.rbCelcjusz.UseVisualStyleBackColor = true;
+            // 
+            // rbKelvin
+            // 
+            this.rbKelvin.AutoSize = true;
+            this.rbKelvin.Location = new System.Drawing.Point(12, 243);
+            this.rbKelvin.Name = "rbKelvin";
+            this.rbKelvin.Size = new System.Drawing.Size(54, 17);
+            this.rbKelvin.TabIndex = 11;
+            this.rbKelvin.Text = "Kelvin";
+            this.rbKelvin.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 177);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Podaj jednostkę";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(209, 206);
+            this.ClientSize = new System.Drawing.Size(209, 278);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.rbKelvin);
+            this.Controls.Add(this.rbCelcjusz);
+            this.Controls.Add(this.rbFarenheit);
             this.Controls.Add(this.pbObrazek);
             this.Controls.Add(this.pbCloud);
             this.Controls.Add(this.pbSnow);
@@ -173,6 +222,10 @@
         private System.Windows.Forms.PictureBox pbSnow;
         private System.Windows.Forms.PictureBox pbCloud;
         private System.Windows.Forms.PictureBox pbObrazek;
+        private System.Windows.Forms.RadioButton rbFarenheit;
+        private System.Windows.Forms.RadioButton rbCelcjusz;
+        private System.Windows.Forms.RadioButton rbKelvin;
+        private System.Windows.Forms.Label label2;
     }
 }
 

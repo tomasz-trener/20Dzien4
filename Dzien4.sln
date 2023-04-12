@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05PrzegladKontrolek", "P05
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06ZadaniePogoda", "P06ZadaniePogoda\P06ZadaniePogoda.csproj", "{A26C4C7B-0D78-4927-ACD8-6276512F18AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07DataBinding", "P07DataBinding\P07DataBinding.csproj", "{F65A43CC-B054-4E2B-ADAD-D23F3B81EB4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A26C4C7B-0D78-4927-ACD8-6276512F18AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26C4C7B-0D78-4927-ACD8-6276512F18AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26C4C7B-0D78-4927-ACD8-6276512F18AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65A43CC-B054-4E2B-ADAD-D23F3B81EB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65A43CC-B054-4E2B-ADAD-D23F3B81EB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65A43CC-B054-4E2B-ADAD-D23F3B81EB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65A43CC-B054-4E2B-ADAD-D23F3B81EB4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

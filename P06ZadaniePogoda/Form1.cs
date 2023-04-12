@@ -24,7 +24,7 @@ namespace P06ZadaniePogoda
 
         private void wczytajMiasta()
         {
-            string[] miasta= File.ReadAllLines(sciezkaMiasta);
+            string[] miasta= File.ReadAllLines(sciezkaMiasta,Encoding.UTF8);
             cbMiasta.Items.Clear();
 
             //mozemy w petli uzupelnic elementy tak samo
@@ -50,7 +50,16 @@ namespace P06ZadaniePogoda
             ManagerPogody mp = new ManagerPogody();
             string wybraneMiasto = cbMiasta.Text;
 
-            double temp= mp.PodajTemperature(wybraneMiasto, "Celcjusz");
+
+            string jednostka = null;
+            if (rbCelcjusz.Checked)
+                jednostka = rbCelcjusz.Text;
+            if (rbKelvin.Checked)
+                jednostka = rbKelvin.Text;
+            if (rbFarenheit.Checked)
+                jednostka = rbFarenheit.Text;
+
+            double temp= mp.PodajTemperature(wybraneMiasto, jednostka);
             lblRaport.Text = Convert.ToString(temp);
 
             pbSnow.Visible = false;
