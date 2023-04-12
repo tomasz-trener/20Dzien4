@@ -1,0 +1,6 @@
+
+
+Stwórz listê rozwijan¹ wyœwietlaj¹ca wszystkie kraje zawodników
+Po wybraniu danego kraju podaj tylko zawodników z danego kraju
+i podaj œredni wzrost zawodników z tego kraju 
+

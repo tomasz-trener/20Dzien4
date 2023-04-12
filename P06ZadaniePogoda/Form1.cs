@@ -32,6 +32,7 @@ namespace P06ZadaniePogoda
 
             // zamiast tego mamy jedną metodę:
             cbMiasta.Items.AddRange(miasta);
+             
         }
 
         private void btnWczytaj_Click(object sender, EventArgs e)
