@@ -24,8 +24,19 @@ namespace P07DataBinding
             Zawodnik[] zawodnicy = mz.WczytajZawodnikow();
 
             lbDane.DataSource = zawodnicy; // wiązanie danych 
-            lbDane.DisplayMember = "ImieNazwiskoKraj";
+                                           // lbDane.DisplayMember = "ImieNazwiskoKraj";
+            
+            Zawodnik.WyswietlaneKolumny = new string[]{"Imie","Nazwisko","Kraj" };
+            lbDane.DisplayMember = "DynamicznaWlasciwosc";
 
+
+            Zawodnik z = new Zawodnik()
+            {
+                Nazwisko = "Kowalski"
+            };
+
+            char c = z[3]; // a
+            char c2 = z.Nazwisko[3];
         }
 
         private void btnPodajTemperature_Click(object sender, EventArgs e)
